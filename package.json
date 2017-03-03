@@ -1,0 +1,37 @@
+{
+  "name": "opensistemas-javascript-exercise",
+  "version": "0.0.0",
+  "description": "Short exercise to test some skills",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramingar/opensistemas-javascript-exercise.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Rafael Minguet García",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ramingar/opensistemas-javascript-exercise/issues"
+  },
+  "homepage": "https://github.com/ramingar/opensistemas-javascript-exercise#readme",
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "fs": "0.0.1-security",
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-shell": "^2.1.0",
+    "rollup": "^0.41.4",
+    "rollup-plugin-babel": "^2.7.1"
+  },
+  "dependencies": {
+    "grunt-cli": "^1.2.0",
+    "material-design-icons": "^3.0.1",
+    "materialize-css": "^0.98.0"
+  }
+}

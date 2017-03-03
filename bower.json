@@ -1,0 +1,16 @@
+{
+  "name": "opensistemas-javascript-exercise",
+  "description": "Short exercise to test some skills",
+  "main": "index.js",
+  "authors": [
+    "Rafael Minguet García"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "javascript"
+  ],
+  "homepage": "https://github.com/ramingar/opensistemas-javascript-exercise",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
