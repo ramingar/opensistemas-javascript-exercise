@@ -6,6 +6,13 @@ import utils from './utils';
 
 $(() => {
 
+    const messages = {
+        notResults: 'No results',
+        searching: 'Searching repo...',
+        error: 'Ooops, something wrong happened...',
+        reset: 'Type something in the field above...'
+    };
+
     const setMessage = message => {
         const elementTemplate = '<a href="#" class="collection-item">' + message + '</a>';
         const repoList = $('#repoList');
@@ -18,7 +25,7 @@ $(() => {
         const repoList = $('#repoList');
 
         if (!data.items.length) {
-            setMessage('No results');
+            setMessage(messages.notResults);
             return;
         }
 
@@ -35,19 +42,20 @@ $(() => {
         });
     };
 
-    $('#query').on('keyup', e => {
+    $('#query').on('keyup', () => {
         utils.debounce.run(() => {
             const query = $('#query').val();
 
-            if (!query.length) {
+            if (!query.trim().length) {
+                setMessage(messages.reset);
                 return;
             }
 
-            setMessage('Searching repo...');
+            setMessage(messages.searching);
             githubApi.searchRepo(query).then(data => {
                 setData(data);
             }, () => {
-                setMessage('Ooops, something wrong happened...');
+                setMessage(messages.error);
             });
 
         }, 1200);
