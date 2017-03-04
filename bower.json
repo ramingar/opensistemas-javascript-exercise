@@ -1,6 +1,7 @@
 {
   "name": "search-github-repository",
   "description": "Short exercise to test some skills",
+  "main": "index.html",
   "authors": [
     "Rafael Minguet García"
   ],
