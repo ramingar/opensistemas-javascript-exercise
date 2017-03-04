@@ -2,7 +2,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         watch: {
             scripts: {
-                files: ['assets/src/*.js'],
+                files: ['assets/src/js/*.js'],
                 tasks: ['copy', 'shell:rollup']
             }
         },
