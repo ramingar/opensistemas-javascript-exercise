@@ -1,0 +1,15 @@
+{
+  "name": "search-github-repository",
+  "description": "Short exercise to test some skills",
+  "authors": [
+    "Rafael Minguet García"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "javascript"
+  ],
+  "homepage": "https://github.com/ramingar/search-github-repo",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
